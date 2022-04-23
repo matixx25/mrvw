@@ -1,0 +1,37 @@
+* {
+	border: 0px solid black;
+}
+.img-libro {
+	width: 98%;
+}
+
+.libros-div {
+	width: 90%;
+	margin: 5%;
+}
+
+.libros-div .row {
+	margin-left: 1%;
+	width: 99%;
+}
+
+.libro-card {
+	padding: 1%;
+}
+
+.libro-card:hover {
+	transform: scale(1.1);
+	border: 1px solid lightgray;
+	background-color: white;
+	color: black;
+}
+
+.link-detalle {
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.link-detalle:hover {
+	color: black;
+}
