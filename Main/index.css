@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+
+
+body{
+	font-family: 'Poppins', sans-serif;
+	background-color: #32CD32 ;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+a   {
+	font-family: 'Sacramento', cursive;
+	color: white;
+	text-decoration: none;
+}
+
+input-group{
+	width: auto;
+}
+.input-group input{
+	text-align: center;
+	font-size: 17px;
+	border-radius: 15px;
+	border: none;
+	height: 45px;
+}
+
+.input-group button{
+	text-align: center;
+	font-size: 17px;
+	border-radius: 15px;
+	border: none;
+}
+
+.menu{
+	background-color: rgba(0,0,0,0);
+	color: rgb(	0,0,0);
+	height: 85px;
+	position: 	fixed;
+	z-index: 100;	
+	width:100%; 			
+
+}
+
+.menu_container{
+	display: flex;
+	position: top;	
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1200px;
+	height: 100%;
+	background-attachment: 	fixed;	
+}
+
+
+.menu_links{
+	height: 100%;
+	transition: transform .5s;
+	display: flex;
+	font-size: 18px;
+}
+
+
+
+.menu_item{
+	list-style: none;
+	position: relative;
+	height: 100%;
+	--clip: polygon(0 0, 100% 0, 100% 0, 0 0);			/* Propiedad custom que esconde el elemento  */
+	--transform: rotate(-90deg);
+}
+
+.menu_item:hover{
+	--clip: polygon(0 0, 100% 0, 100% 100%, 0 100%);	/* Propiedad custom que muestra el elemento  */
+	--transform: rotate(0);
+}
+
+
+.menu_link{
+	color: white ;
+	text-decoration: none;
+	padding: 0 45px;
+	padding-top: 17px;
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
+
+.menu_link:hover{
+
+	background-color: rgba(0,0,0,0);
+}
+
+.menu_arrow{
+	transform: var(--transform);
+	transition: transform .3s;
+	display: block;
+	margin-left: 3px;
+}
+.menu_nesting{
+	list-style: none;
+	transition: clip-path .3s;
+	clip-path: var(--clip);
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: max-content;
+	transform: translateY(100%);
+	background-color:rgba(0,0,0,0.1);
+}
+
+.menu_link--inside{
+	padding: 30px 100px 30px 20px;
+}
+
+.menu_link--inside:hover{
+	background-color: #798499;
+}
+
+.menu_hamburger{
+ 	height: 100%;
+ 	display: flex;
+ 	align-items: center;
+ 	padding: 0 15px;
+ 	cursor: pointer;
+ 	display: none;
+ }
+
+.menu_img{
+	display: block;
+	width: 36px;
+}
+
+#picture_profile{
+	max-width: 100px;
+	border-radius: 55px 55px 0px 0px;
+	height: 100%;
+ 	display: flex;
+ 	align-items: center;
+ 	padding: 0 10px;
+ 	cursor: pointer;
+}
+
+
+#picture_profile2{
+	max-width: 100px;
+	position: relative;
+	right: 40px;
+	border-radius: 55px 55px 0px 0px;
+	height: 100%;
+ 	display: flex;
+ 	align-items: center;
+ 	padding: 0 10px;
+ 	cursor: pointer;
+}
+
+
+.menu_profile{
+	list-style: none;
+	transition: clip-path .3s;
+	clip-path: var(--clip);
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: max-content;
+	transform: translateY(100%);
+	background-color:rgba(0,0,0,1);
+}
+
+
+h2{
+	text-align: center;
+	z-index: 300px;
+}
+
+
+@media (max-width:800px){
+
+
+	.menu_hamburger{
+		display: flex;
+	}
+	.menu_item{
+		--clip: 0;
+		overflow: hidden;
+	}
+
+
+	.menu_item--active{
+		--transform: rotate(0);
+		--background: #5e7094;
+	}
+
+	.menu_item--show{
+		background-color: var(--background);
+	}
+
+	.menu_links{
+		position: fixed;
+		max-width: 400px;
+		width: 100%;
+		top: 70px;
+		bottom: 0;
+		right: 0;
+		background-color: #000;
+		overflow-y: auto;
+		display: grid;
+		grid-auto-rows: max-content;
+		transform: translateX(100%);
+	}
+	.menu_links--show{
+		transform: unset;
+		width: 100%;
+	}
+	.menu_link{
+		padding: 25px 0;
+		padding-left: 30px;
+		height: auto;
+	}
+	.menu_arrow{
+		margin-left: auto;
+		margin-right: 20px;
+	}
+
+	.menu_nesting{
+		display: grid;
+		position: unset;
+		width: 100%;
+		transform: translateY(0);
+		height: 0;
+		transition: height .3s;
+	}
+
+	.menu_link--inside{
+		width: 90%;
+		margin-left: auto;
+		border-left: 1px solid #798499;
+	}
+
+
+}
+.wowslider-conection{
+	z-index: -1;	
+	width: 200;
+
+}
+.Opinion{
+	object-position: center;
+}
+
+

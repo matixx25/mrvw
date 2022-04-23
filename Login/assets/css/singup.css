@@ -1,0 +1,188 @@
+body{
+
+	background-image: url(../img/libro2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+
+h1{
+	text-align: left;
+	padding-top: 70px;
+	padding-left: 150px ;
+}
+h1 a{
+	padding-top: 40px;
+	font-size: 70px;
+	font-family: 'Sacramento', cursive;
+	color: ;
+}
+
+h1 a:hover {
+  color: #a58429;
+}
+h1 a:link{
+  text-decoration: none;
+}
+
+
+
+
+div h2{
+	text-align: center;
+	font-size: 70px;
+	font-family: 'Raleway', sans-serif;
+  text-shadow: 5px 4px 11px #f2f146;
+  padding-bottom: 15px;
+  padding-top: 45px;
+  color: #bf930d;
+}	
+
+
+.link_login{
+	position: relative;
+	text-align: center;	
+	bottom:45px;
+	font-family: 'Poppins', sans-serif;
+	padding: 0;
+}
+span{
+	font-size: 30px;
+	color: #bf930d;
+}
+span a:link{
+  text-decoration: none;
+}
+span a:visited{
+  text-decoration: none;
+}
+span a:hover{
+  color: #a58429;
+}
+span a:active{
+  text-decoration: none;
+}
+span a{
+	color: #353535 ;
+}
+
+.box-singular {
+	background-color: rgba(16,16,16,0.5);
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	text-shadow: 0 0 20px #cbcdcc;
+	font-size: 30px;
+	padding-top: 55px;
+	margin: 10px;
+	border-radius: 35px;
+
+}
+.box-singular2{
+	background-color: rgba(16,16,16,0.5);
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	text-shadow: 0 0 20px #cbcdcc;
+	font-size: 30px;
+	padding: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 200px;
+	border-radius: 35px;
+}
+
+.box-singup {
+  background-color: rgba(16,16,16,0.5);
+  width: 800px;
+  height: 750px;
+  border-radius: 25px;
+  padding: 1px;
+  margin-left: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.884);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+}
+.box-singup p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	padding: 7px;
+	text-align: center;
+}
+
+.box-singup label{
+	font-family: 'Open Sans', sans-serif;
+	color: #FFFFFF;	
+ 	font-size: 20px;
+}
+
+.input{
+	width: 100%;
+	border-buttom: solid 3px white;
+	border-left: none;
+  border-right: none;
+  border-top: none;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 2px;
+  height: 40px;
+  text-align: center;
+  color: white;
+}
+
+
+.input:hover{
+	text-decoration: none;
+	border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+.select{
+	width: 100%;
+	border-buttom: solid 3px white;
+	border-left: none;
+  border-right: none;
+  border-top: none;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 2px;
+  height: 40px;
+  text-align: center;
+  color: white;
+}
+.select:hover{
+	color: black;
+	background-color: white;
+}
+
+
+option{
+	color: black;
+	text-align: center;
+}
+
+.condiciones p{
+	color: white;
+}
+.condiciones a{
+	text-decoration: none;
+}
+.button{
+	width: 70%;
+	height: 40px;
+	background-color: rgba(16,16,16,0.5);
+	border-color:white;
+	border-width: 2px;
+	border-radius: 20px;
+	color: whitesmoke;
+	margin: 30px;
+}
+.button:hover {
+	color: black;
+	background-color: white;
+  box-shadow: 0 12px 16px 0 rgba(255,255,255,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  border: none;
+}
+
+
+#capchat{
+	width: 300px;
+	height: 80px;
+}

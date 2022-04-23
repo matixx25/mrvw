@@ -1,0 +1,162 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.main-box{
+	margin-top: 110px;
+}
+.title{
+	text-align: center;
+	padding-top: 60px;
+	padding-right: 70px;
+	font-family: 'Sacramento', cursive;
+	font-size: 120px;
+	color: #cccc09;
+}
+h1 a{
+	font-family: 'Sacramento', cursive;
+}
+h1 a:hover {
+  color: #a58429;
+}
+h1 a:link{
+  text-decoration: none;
+}
+.description{
+	font-size: 30px;
+	font-weight: 100;
+	color: white;
+  text-align: center;
+}
+
+.box-login{
+	background-color: #000000;
+	height: 650px;
+	padding: 1px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-top: 4%;
+	margin-bottom: 0;
+	border-radius: 30px;
+	box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+}
+
+.box-introduccion{
+	background-color: rgba(0, 0, 0, 0);
+	height: 600px;
+	padding: 1px;
+	border-radius: 13px;
+	margin-bottom: 30px;
+}
+
+
+
+.input{
+	width: 100%;
+	border-buttom: solid 3px white;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	background-color: rgba(0, 0, 0,0);
+	border-radius: 2px;
+	height: 40px;
+	text-align: center ;
+	color: white;
+	margin-top: 55px;
+	font-size: 20px;
+}
+
+.send{
+	padding: 7px 50px;
+	background-color: white;
+	width: 70%;
+	border: 2px solid white;
+	border-radius:30px ;
+	cursor: pointer;
+	font-weight: 500;
+	font-size: 20px;
+	margin-top: 130px;
+}
+
+
+
+header{
+	border-bottom: 2px solid #eee;
+	padding: 20px 0px ;
+	margin-bottom: 10px ;
+	margin: 10px 25px;
+	width: 100%;
+	text-align: left ;
+}
+
+header a{
+	text-decoration: none;
+	color: #333 ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button{
+	width: 70%;
+	height: 40px;
+	background-color: rgba(16,16,16,0.5);
+	border-color:white;
+	border-width: 2px;
+	border-radius: 20px;
+	color: whitesmoke;
+	margin: 30px;
+}
