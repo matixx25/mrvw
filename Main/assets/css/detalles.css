@@ -1,0 +1,38 @@
+* {
+	border: 1px solid transparent;
+}
+
+.div-principal {
+	margin: 0% 5%;
+
+}
+
+.comentario-div {
+	border: 1px solid lightgray;
+	margin-bottom: 1px;
+	padding: 5px;
+}
+
+.fecha-coment {
+	color: gray;
+	font-size: 14px;
+	text-align: center;
+}
+
+.comentario-input {
+	width: 100%;
+	border: 1px solid black;
+}
+
+.div-boton-comentar {
+	padding: 5px;
+}
+
+.div-boton-comentar input {
+	display: block;
+	margin: auto;
+	padding: 5px;
+	font-weight: bold;
+	border-radius: 20px;
+	border: 1px solid black;
+}
