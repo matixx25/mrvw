@@ -2,5 +2,5 @@
 	session_start();
 	$_SESSION['auth'] = false;
 	session_destroy();
-	header("location: Login.php");
+	header("location: ../../Login/Login.php");
 ?>

@@ -21,16 +21,20 @@ h1{
 	font-family: 'Sacramento', cursive;
 	font-size: 55px;
 	color: white;
-	
-
 }
 
+h1 a{
+	text-decoration: none;
+	color: #fff;
+}
 
-.menu_logo{
-	left: 60px;
+h1 a:hover{
+	text-decoration: none;
+	color: gold;
 }
 .input-group{
-	width: auto;
+	width: 450px;
+	margin-left: 55px;
 
 }
 .input-group input{
@@ -40,6 +44,7 @@ h1{
 	border: none;
 	height: 45px;
 	padding-left: 30px;
+
 }
 
 .input-group button{
@@ -63,7 +68,6 @@ h1{
 .menu_container{
 	display: flex;
 	position: top;	
-	justify-content: space-between;
 	align-items: center;
 	width: 100%;
 	margin: 0 auto;
@@ -77,7 +81,7 @@ h1{
 	height: 100%;
 	transition: transform .5s;
 	display: flex;
-	font-size: 18px;
+	font-size: 20px;
 }
 
 
@@ -85,7 +89,7 @@ h1{
 .menu_item{
 	list-style: none;
 	position: relative;
-	height: 100%;
+	height: 100%;	
 	--clip: polygon(0 0, 100% 0, 100% 0, 0 0);			/* Propiedad custom que esconde el elemento  */
 	--transform: rotate(-90deg);
 }
@@ -108,8 +112,13 @@ h1{
 
 .menu_link:hover{
 
-	background-color: rgba(0,0,0,0);
+	color: rgba(255,255,255,1);
+	text-shadow: 2px 2px 20px rgba(192, 192, 192,1);
+	text-decoration: none;
+	cursor: pointer;
 }
+
+
 
 .menu_arrow{
 	transform: var(--transform);
@@ -126,15 +135,17 @@ h1{
 	bottom: 0;
 	width: max-content;
 	transform: translateY(100%);
-	background-color:rgba(0,0,0,0.1);
+	background-color:rgba(0,0,0,0.3);
 }
 
 .menu_link--inside{
 	padding: 30px 100px 30px 20px;
+	text-decoration: none;
 }
 
 .menu_link--inside:hover{
-	background-color: #798499;
+	background-color: rgba(255, 255, 255, 0.3);
+	text-decoration: none;
 }
 
 .menu_hamburger{
@@ -146,10 +157,7 @@ h1{
  	display: none;
  }
 
-.menu_img{
-	display: block;
-	width: 36px;
-}
+
 
 
 
@@ -334,6 +342,197 @@ h1{
 {
     font-size: 1.5em;
 }
+
+
+
+
+
+
+
+.navigation2
+{
+	z-index: 100;
+	position: fixed;
+	inset: 100px 0 100px 0px;
+	width: 10px;
+	background: rgba(0, 0, 0, 0.6);
+	transition: 0.5s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-right: 90px;
+	padding-top: 90px;
+}
+.navigation2.open
+{
+	width: 250px;
+}
+.navigation2 .menuToggle2
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	border-bottom:	1px solid rgba(0,0,0,0.25);
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 0 30px;
+}
+
+.navigation2 .menuToggle2::before
+{
+	content: '';
+	position: absolute;
+	width: 30px;
+	height: 2px;
+	background: #fff;
+	transform: translateY(-8px);
+	transition: 0.5s;
+}
+
+
+.navigation2.open .menuToggle2::before
+{
+	transform: translateY(0px) rotate(45deg);
+}
+
+
+
+.navigation2 .menuToggle2::after
+{
+	content: '';
+	position: absolute;
+	width: 30px;
+	height: 2px;
+	background: #fff;
+	transform: translateY(8px);
+	transition: 0.5s;
+	box-shadow: 0 -8px 0 #fff;
+}
+
+
+
+.navigation2.open .menuToggle2::after
+{
+	transform: translateY(0px) rotate(-45deg);
+	box-shadow: 0 0 0 #333;
+
+}
+
+.navigation2 ul
+{
+	display: flex;
+	flex-direction: column;
+	gap: 75px;
+	width: 100%;
+}
+
+.navigation2 ul li
+{
+	list-style: none;
+	position: relative;
+	width: 100%;
+	height: 60px;
+	padding: 0px 10px;
+	transition: 0.5s;
+}
+
+
+
+.navigation2 ul li:hover
+{
+	transform: translateX(30px);
+}
+
+.navigation.open ul li:hover
+{
+	transform: translateX(10px);
+}
+
+
+
+
+.navigation2 ul li a
+{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	text-align: center;
+	text-decoration: none;
+}
+
+
+.navigation2 ul li a .icon
+{
+	position: relative;
+	display: block;
+	min-width: 55px;
+	height: 55px;
+	line-height: 60px;
+	transition: 0.5s;
+	border-radius: 15px;
+	font-size: 2em;
+	color: #fff;
+
+}
+
+.navigation2 ul li:hover a .icon
+{
+	color: #fff;
+	background: var(--clr);
+}
+
+
+.navigation2 ul li:hover a .icon::before
+{
+	content: '';
+	position: absolute;
+	top: 10px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--clr);
+	filter: blur(8px);
+	opacity: 0;
+	transition: 0.5s;
+}
+
+
+.navigation2 ul li:hover a .icon::before
+{
+	opacity: 0.5;
+}
+
+
+.navigation2 ul li a .text
+{
+	position: relative;
+	padding: 0 15px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	color: #fff;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.5s;
+}
+
+.navigation2.open ul li a .text
+{
+	opacity: 1;
+	visibility: visible;
+}
+
+
+.navigation2 ul li:hover a .text
+{
+	color: var(--clr);
+}
+
 
 
 @media (max-width:800px){
